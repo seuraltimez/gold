@@ -36,13 +36,24 @@ body{
   font-weight: 500;
 	margin: 0 21px 0 21px;
 }
-.navbar-nav a{
-    background: none;
-    transition: background 1s;
-    border-radius: 5px;
+.navbar-nav a {
+    line-height: 1;
+    display: inline-block;
+    color:#000;
+    text-decoration:none;
+    cursor: pointer;
 }
-.navbar-nav a:hover{
-  background: #A9A9A9;
+.navbar-nav a:after {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-color: #000;
+    transition: width .3s ease-in-out;
+}
+.navbar-nav a:hover:after,
+.navbar-nav a:focus:after {
+    width: 100%;
 }
 .home-text{
 	margin-top: 10%;
@@ -116,7 +127,7 @@ body{
 }
 
 .team .card img{
-	border-radius: 50%;
+	border-radius: 50px;
 }
 .team .card {
 	background-color: #f7f7f7;
