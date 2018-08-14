@@ -1,2 +1,2 @@
 # gold
-Вёрстка landing page
+Вёрстка landing page адаптивный
